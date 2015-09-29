@@ -1,0 +1,13 @@
+<div ng-controller="RedirectFailController">
+    <form id="redirectForm" method="post" action="j_spring_security_logout">
+        <input type="hidden" value="{{csrf.tokenId}}" name="{{csrf.parameterName}}">
+    </form>
+    <div class="content-div">
+        <div class="user-header">
+            <div class="page-head-text">Login needed - Access denied</div>
+        </div>
+        <div class="main-content">
+            <h1> You are not logged in..! &nbsp; <a href="" ng-click="formSubmit();"> Go to Login page </a> </h1>
+        </div>
+    </div>
+</div>

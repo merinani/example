@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html ng-cloak ng-app="VFusionStudio">
+<head>
+    <sec:csrfmetatags />
+    <title>Home Page</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="static/css/angular-material.min.css" rel="stylesheet" />
+    <link href="static/css/ng-table.css" rel="stylesheet" />
+    <link href="static/css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="app-div container">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <ng-include src="'static/views/topPanel/view.html'"></ng-include>
+        </div>
+        <div ng-view></div>
+    </div>
+
+    <script src="static/lib/jquery.min.js"></script>
+    <script src="static/lib/angular.min.js"></script>
+    <script src="static/lib/angular-sanitize.min.js"></script>
+    <script src="static/lib/angular-resource.min.js"></script>
+    <script src="static/lib/angular-cookies.min.js"></script>
+    <script src="static/lib/angular-route.js"></script>
+    <script src="static/lib/angular-animate.min.js"></script>
+    <script src="static/lib/angular-material.min.js"></script>
+    <!-- <script src="static/lib/angular-ui-router.min.js"></script>-->
+    <script src="static/lib/ui-bootstrap-tpls.min.js"></script>
+    <script src="static/lib/angular-animate.min.js"></script>
+    <script src="static/lib/ng-table.js"></script>
+    <script src="static/app.js"></script>
+    <script src="static/manage/directives.js"></script>
+    <script src="static/manage/services.js"></script>
+    <script src="static/views/dashboard/controller.js"></script>
+    <script src="static/views/topPanel/controller.js"></script>
+    <script src="static/views/editor/controller.js"></script>
+    <script src="static/views/manage/controller.js"></script>
+    <script src="static/views/error/controller.js"></script>
+    <script src="static/views/redirect/controller.js"></script>
+    <script src="static/views/logout/controller.js"></script>
+
+</body>
+</html>

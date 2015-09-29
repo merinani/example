@@ -1,0 +1,6 @@
+<div class="panel-controller-div" ng-controller="TopPanelController" ng-if="userData.isLogged">
+    <div class="manage-navi">
+        <a ng-if="userData.isAdmin" href="" ng-click="manageNavigation()"> Manage </a>
+    </div>
+    <ng-include src="'static/views/logout/view.html'"></ng-include>
+</div>

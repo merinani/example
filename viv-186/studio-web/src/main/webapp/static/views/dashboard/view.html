@@ -1,0 +1,18 @@
+<div class="content-div" ng-controller="DashboardController as ctrl">
+    <table ng-table="tableParams" show-filter="true" class="table">
+        <tr ng-repeat="project in $data track by $index" ng-click="listRowClick(project.currentUserHasAccess, project.projectName)">
+            <td title="'Project Name'" sortable="'projectName'" filter="{ 'projectName': 'text' }">
+                {{ project.projectName }}
+            </td>
+            <td title="'Version'" sortable="'1 * version'" filter="{ 'version': 'text' }">
+                {{ project.version }}
+            </td>
+            <td title="'Last Updated On'" sortable="'lastUpdated'" filter="{ 'lastUpdated': 'text' }">
+                {{ project.lastUpdated|date }}
+            </td>
+            <td title="'Last Updated User'" sortable="'lastUpdatedUser'" filter="{ 'lastUpdatedUser': 'text' }">
+                {{ project.lastUpdatedUser }}
+            </td>
+        </tr>
+    </table>
+</div>

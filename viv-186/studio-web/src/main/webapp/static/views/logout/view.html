@@ -1,0 +1,8 @@
+<div ng-controller="LogoutController">
+    <form id="logoutForm" method="post" action="j_spring_security_logout">
+        <input type="hidden" value="{{csrf.tokenId}}" name="{{csrf.parameterName}}">
+    </form>
+    <div class="logout-div">
+        <a href="" ng-click="formSubmit()"> Logout </a>
+    </div>
+</div>

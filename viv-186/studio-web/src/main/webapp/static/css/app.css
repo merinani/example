@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+	height: 100%;
+	width: 100%;
+}
+.app-div {
+    width: 100%;
+    padding: 0;
+}
+.error {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.msg {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+#login-box {
+	width: 300px;
+	padding: 20px;
+	margin: 100px auto;
+	background: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border: 1px solid #000;
+}
+.user-header {
+	background: #222222 none repeat scroll 0 0;
+    color: #f6f6f6;
+    position: fixed;
+    text-align: right;
+    top: 10px;
+    z-index: 1050;
+}
+.page-head-text {
+	font-family: caption;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.content-div {
+	height: inherit;
+    margin-top: 50px;
+    width: inherit;
+}
+.main-content {
+	background: #F6F6F6 none repeat scroll 0 0;
+    padding: 38px 10px 10px;
+    text-align: center;
+}
+
+.panel-controller-div {
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+}
+.logout-div {
+    text-align: right;
+}
+.manage-navi {
+    position: absolute;
+    right: 80px;
+    text-align: right;
+    width: 100%;
+}
